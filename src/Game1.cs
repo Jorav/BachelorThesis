@@ -72,7 +72,7 @@ namespace BachelorThesis.src
 
             string[] ConfigVar = new string[4]; ;// EntityFactory.ReadConfig();
             int seed = 0;// int.Parse(ConfigVar[0]);
-            int nr = 20;// int.Parse(ConfigVar[1]);
+            int nr = 20;// int.Parse(ConfigVar[1]); f
             float gravity = 10;// float.Parse(ConfigVar[2]);
             //int test_case = int.Parse(ConfigVar[3]);
 
