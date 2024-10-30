@@ -61,10 +61,12 @@ namespace BachelorThesis.src
         private void AdjustPosition()
         {
             PreviousPosition = Position;
-            //if (Controller is AABBTree tree)
+            
             //    Position = tree.MassCenter;
             //else
-                Position = Controller.Position;// PreviousPosition + 0.001f*(Controller.Position-PreviousPosition);
+            Position = Controller.Position;// PreviousPosition + 0.001f*(Controller.Position-PreviousPosition);
+            if (Controller is AABBTree tree)
+                Position += new Vector2(tree.root.AABB.Width / 2, tree.root.AABB.Height / 2);
         }
 
         private void AdjustZoom(float optimalZoom)

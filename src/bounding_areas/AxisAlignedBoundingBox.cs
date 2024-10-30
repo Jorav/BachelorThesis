@@ -55,7 +55,7 @@ namespace BachelorThesis.src.bounding_areas
             DL = new Vector2(upperLeftCorner.X, upperLeftCorner.Y + height);
             DR = new Vector2(upperLeftCorner.X + width, upperLeftCorner.Y + height);
             UR = new Vector2(upperLeftCorner.X + width, upperLeftCorner.Y);
-            this.position = upperLeftCorner + new Vector2(width / 2, height / 2);
+            this.position = upperLeftCorner;
             Radius = (float)Math.Sqrt(Math.Pow(width / 2, 2) + Math.Pow(height / 2, 2));
             MaxXY = ((float)Math.Max(Math.Max(UL.X, UR.X), Math.Max(DL.X, DR.X)),(float)Math.Max(Math.Max(UL.Y, UR.Y), Math.Max(DL.Y, DR.Y)));
             MinXY = ((float)Math.Min(Math.Min(UL.X, UR.X), Math.Min(DL.X, DR.X)),(float)Math.Min(Math.Min(UL.Y, UR.Y), Math.Min(DL.Y, DR.Y)));
